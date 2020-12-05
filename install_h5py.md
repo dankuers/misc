@@ -1,22 +1,22 @@
-# h5py parallel install guide on ubuntu 20.04
+## installing parallel h5py on ubuntu 20.04
 
-will install to home dir ~/opt/
-will link binaries to ~/bin/
+will install to $HOME/opt/<br>
+will link binaries to $HOME/bin/
 
-Sources:
-Download MPICH here: https://www.mpich.org/downloads/
+Sources:<br>
+Download MPICH here: https://www.mpich.org/downloads/<br>
 Download HDF5 here: https://www.hdfgroup.org/downloads/hdf5/source-code/
 
 A few settings upfront, set accordingly: 
-```
+```shell
 export mpichfile=mpi-3.3.2.tar.gz
 export mpichsrc=mpi-3.3.2
 export hdf5file=hdf5-1.12.0.tar.gz
 export hdf5src=hdf5-1.12.0
 ```
 
-## Install MPICH
-```
+### Install MPICH
+```shell
 export CC=gcc
 cd $HOME/Downloads
 tar xzfv $mpichfile
@@ -32,8 +32,8 @@ mkdir bin
 cp -rs $HOME/opt/$mpichsrc/bin .
 ```
 
-## Install HDF5 with parallel support
-```
+### Install HDF5 with parallel support
+```shell
 export CC=mpicc
 cd $HOME/Downloads
 tar xzfv $hdf5file
@@ -48,8 +48,8 @@ mkdir bin
 cp -rs $HOME/opt/$hdf5src/bin .
 ```
 
-## Install h5py (will install mpi4py automatically)
-```
+### Install h5py (will install mpi4py automatically)
+```shell
 export CC=mpicc
 export HDF5_MPI=ON
 export HDF5_DIR=$HOME/opt/$hdf5src
