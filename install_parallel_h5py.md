@@ -9,8 +9,8 @@ Download HDF5 here: https://www.hdfgroup.org/downloads/hdf5/source-code/
 
 A few settings upfront, set accordingly: 
 ```shell
-export mpichfile=mpi-3.3.2.tar.gz
-export mpichsrc=mpi-3.3.2
+export mpichfile=mpich-3.3.2.tar.gz
+export mpichsrc=mpich-3.3.2
 export hdf5file=hdf5-1.12.0.tar.gz
 export hdf5src=hdf5-1.12.0
 ```
