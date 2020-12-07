@@ -22,8 +22,8 @@ cd $HOME/Downloads
 tar xzfv $mpichfile
 cd $mpichsrc
 mkdir -p $HOME/opt/$mpichsrc
-# ./configure --enable-shared --disable-fotran --prefix=$HOME/opt/$mpichsrc --with-device=ch3:sock
-./configure --enable-shared --disable-fotran --prefix=$HOME/opt/$mpichsrc
+# ./configure --enable-shared --disable-fortran --prefix=$HOME/opt/$mpichsrc --with-device=ch3:sock
+./configure --enable-shared --disable-fortran --prefix=$HOME/opt/$mpichsrc
 make
 # make check
 make install
