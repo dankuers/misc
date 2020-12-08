@@ -49,7 +49,8 @@ mkdir bin
 cp -rs $HOME/opt/$hdf5src/bin .
 ```
 
-Note: Switch to your desired virtual enviornment.
+
+Note: Switch to your desired virtual environment now.
 
 ### Install mpi4py
 ```shell
