@@ -95,5 +95,5 @@ GROUP "/" {
 ```
 
 ## Troubleshooting
-- Some 8.x.x version of gcc didn't work for the HDF5 compilation, so instead I used 5.4.0 and then it worked.
+- Some 8.x.x version of gcc didn't work for the HDF5 compilation, so instead I used 5.4.0 and then it worked. (Not on ubuntu though, it was RHEL)
 - When different versions of MPI were used to build HDF5 and mpi4py then some error came up. But this shouldn't be the case if you installed all of the above yourself (and therefore used the same MPI).
